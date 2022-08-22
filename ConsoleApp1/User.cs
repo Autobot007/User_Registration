@@ -28,6 +28,25 @@ namespace RegexDemo
                 Console.ResetColor ();
             }
         }
-        
+        public static void ValidLastName()
+        {
+            Console.WriteLine("Enter your last name");
+            string data = Console.ReadLine();
+            string namePattern = "^[A-Z]{1}[a-zA-Z]{2,}";
+            Regex regex = new Regex(namePattern);
+            if (regex.IsMatch(data))
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Name is Valid");
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Name is not Valid");
+                Console.ResetColor();
+            }
+        }
+
     }
 }

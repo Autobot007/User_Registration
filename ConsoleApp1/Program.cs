@@ -10,6 +10,7 @@ namespace User_Registration
             Console.WriteLine("===========================");
 
             User.ValidFirstName();
+            User.ValidLastName();
 
         }
     }
