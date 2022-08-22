@@ -1,4 +1,6 @@
-﻿namespace User_Registration
+﻿using RegexDemo;
+
+namespace User_Registration
 {
     public class Program {
 
@@ -6,6 +8,9 @@
         {
             Console.WriteLine("Welcome to User Registraion");
             Console.WriteLine("===========================");
+
+            User.ValidFirstName();
+
         }
     }
 }
